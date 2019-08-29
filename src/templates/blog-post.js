@@ -40,4 +40,4 @@ export const query = graphql`
   }
 `
 
-export default BlogPosts
+export default BlogPost
