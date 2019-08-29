@@ -8,14 +8,14 @@ const BlogPost = ({ data }) => {
         html
       },
     } = useStaticQuery(graphql`
-    query Post($slug: String) {
-      markdownRemark(fields: {slug: { eq: $slug }}) {
-        frontmatter {
-          title
+      query Post($slug: String) {
+        markdownRemark(fields: {slug: { eq: $slug }}) {
+          frontmatter {
+            title
+          }
+          html
         }
-        html
       }
-    }
   `)
 
   return (
